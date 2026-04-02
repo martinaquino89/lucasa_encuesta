@@ -663,6 +663,10 @@
           <input class="info-input" type="text" id="f-ejecutivo" placeholder="Nombre del ejecutivo (opcional)">
         </div>
         <div class="info-field">
+          <label class="info-label">Municipio *</label>
+          <input class="info-input" type="text" id="f-municipio" placeholder="Municipio al que perteneces" required>
+        </div>
+        <div class="info-field">
           <label class="info-label">Fecha aproximada de última compra</label>
           <input class="info-input" type="date" id="f-fecha">
         </div>
@@ -754,7 +758,7 @@
     <div class="q-card" id="card-5">
       <div class="q-header">
         <div class="q-num" id="num-5">5</div>
-        <div class="q-text">¿La calidad de los lubricantes que adquiriste cumplió con tus expectativas técnicas?<span class="q-required">*</span></div>
+        <div class="q-text">¿La calidad de los productos que adquiriste cumplió con tus expectativas técnicas?<span class="q-required">*</span></div>
       </div>
       <div class="star-group">
         <label class="star-option"><input type="radio" name="q5" value="1" onchange="onAnswer('5',this)"><div class="star-btn">😞</div><span class="star-num">1</span></label>
@@ -1042,6 +1046,7 @@
       empresa          : empresa,
       nombre           : nombre,
       ejecutivo        : document.getElementById('f-ejecutivo').value.trim(),
+      municipio        : document.getElementById('f-municipio').value.trim(),
       fecha_compra     : document.getElementById('f-fecha').value,
       q1_ventas_atencion    : getRadioValue('q1'),
       q2_ventas_info        : getRadioValue('q2'),
