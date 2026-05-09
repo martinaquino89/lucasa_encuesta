@@ -667,6 +667,14 @@
           <input class="info-input" type="text" id="f-municipio" placeholder="Municipio al que perteneces" required>
         </div>
         <div class="info-field">
+          <label class="info-label">Teléfono de contacto *</label>
+          <input class="info-input" type="tel" id="f-telefono" placeholder="Ej. 993 123 4567" required>
+        </div>
+        <div class="info-field">
+          <label class="info-label">Correo electrónico</label>
+          <input class="info-input" type="email" id="f-correo" placeholder="tu@correo.com (opcional)">
+        </div>
+        <div class="info-field">
           <label class="info-label">Fecha aproximada de última compra</label>
           <input class="info-input" type="date" id="f-fecha">
         </div>
@@ -1047,6 +1055,8 @@
       nombre           : nombre,
       ejecutivo        : document.getElementById('f-ejecutivo').value.trim(),
       municipio        : document.getElementById('f-municipio').value.trim(),
+      telefono         : document.getElementById('f-telefono').value.trim(),
+      correo           : document.getElementById('f-correo').value.trim(),
       fecha_compra     : document.getElementById('f-fecha').value,
       q1_ventas_atencion    : getRadioValue('q1'),
       q2_ventas_info        : getRadioValue('q2'),
